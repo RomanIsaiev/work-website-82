@@ -1,20 +1,1276 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>Как переехать в CША</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
+    <header class="header">
+      <div class="container">
+        <div class="short-info-container">
+          <p class="short-info-text">
+            Онлайн-курс <br />
+            <span>“Привет Америка”</span> с персональной стратегией по переезду
+            в США
+          </p>
+          <p class="short-info-text">
+            <span
+              >Старт <span id="dateElement"></span>.<span
+                id="monthElement"
+              ></span
+            ></span>
+          </p>
+        </div>
+      </div>
+    </header>
     <main>
-      <section></section>
+      <section class="hero">
+        <div class="container">
+          <picture
+            ><source
+              srcset="
+                ./src/img/hero/hero-flag-1x.png 1x,
+                ./src/img/hero/hero-flag-2x.png 2x
+              "
+              width="70"
+              height="99" />
+            <img
+              class="hero-flag left-flag"
+              src="./src/img/hero/hero-flag-1x.png"
+              alt="flag"
+              width="70"
+              height="99"
+          /></picture>
+          <picture
+            ><source
+              srcset="
+                ./src/img/hero/hero-flag-1x.png 1x,
+                ./src/img/hero/hero-flag-2x.png 2x
+              "
+              width="70"
+              height="99" />
+            <img
+              class="hero-flag right-flag"
+              src="./src/img/hero/hero-flag-1x.png"
+              alt="flag"
+              width="70"
+              height="99"
+          /></picture>
+          <div class="title-container">
+            <h1 class="title">Как переехать и адаптироваться</h1>
+            <h2 class="subtitle">в сша,</h2>
+            <p class="desc">
+              начать новую жизнь с нуля благодаря пошаговому плану без лишнего
+              стресса
+            </p>
+          </div>
+          <ul class="list">
+            <li class="list-item">
+              <img
+                src="./src/img/hero/item-image.svg"
+                alt="star"
+                width="20"
+                height="20"
+              />
+              <p class="item-text">Даже без знания английского</p>
+            </li>
+            <li class="list-item">
+              <img
+                src="./src/img/hero/item-image.svg"
+                alt="star"
+                width="20"
+                height="20"
+              />
+              <p class="item-text">С правильной стратегией</p>
+            </li>
+            <li class="list-item">
+              <img
+                src="./src/img/hero/item-image.svg"
+                alt="star"
+                width="20"
+                height="20"
+              />
+              <p class="item-text">Максимальной поддержкой</p>
+            </li>
+            <li class="list-item">
+              <img
+                src="./src/img/hero/item-image.svg"
+                alt="star"
+                width="20"
+                height="20"
+              />
+              <p class="item-text">И экономией бюджета</p>
+            </li>
+          </ul>
+          <a class="btn" href="">Присоединиться</a>
+        </div>
+      </section>
+      <picture
+        ><source
+          srcset="
+            ./src/img/after-hero-1x.jpg 1x,
+            ./src/img/after-hero-2x.jpg 2x
+          "
+          width="100%"
+          height="auto" />
+        <img
+          class="after-hero-img"
+          src="./src/img/after-hero-1x.jpg"
+          alt="author"
+          width="100%"
+          height="auto"
+      /></picture>
+      <section class="bonuses">
+        <div class="container">
+          <div class="timer-container">
+            <p class="timer-title">
+              Успейте присоединиться по специальной цене и забрать бонусы
+            </p>
+            <div class="timer-container">
+              <div class="countdown">
+                <div class="countdown-number">
+                  <span class="minutes countdown-time"></span>
+                  <div class="countdown-label minutes-label"></div>
+                </div>
+                <div><span class="countdown-doubledot">:</span></div>
+                <div class="countdown-number">
+                  <span class="seconds countdown-time"></span>
+                  <div class="countdown-label seconds-label"></div>
+                </div>
+                <div><span class="countdown-doubledot">:</span></div>
+                <div class="countdown-number">
+                  <span class="milliseconds countdown-time"></span>
+                  <div class="countdown-label milliseconds-label">
+                    мілісекунд
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="bonuses-list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-01-1x.png 1x,
+                    ./src/img/bonuses/bonus-01-2x.png 2x
+                  "
+                  width="156"
+                  height="107" />
+                <img
+                  class="bonus-img"
+                  src="./src/img/bonuses/bonus-01-1x.png"
+                  alt="bonus"
+                  width="156"
+                  height="107"
+              /></picture>
+              <p class="item-text">
+                Персональная стратегия переезда от наших экспертов
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-01-1x.png 1x,
+                    ./src/img/bonuses/bonus-01-2x.png 2x
+                  "
+                  width="156"
+                  height="107" />
+                <img
+                  class="bonus-img"
+                  src="./src/img/bonuses/bonus-01-1x.png"
+                  alt="bonus"
+                  width="156"
+                  height="107"
+              /></picture>
+              <p class="item-text">
+                Список документов для подачи на туристическую визу
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-01-1x.png 1x,
+                    ./src/img/bonuses/bonus-01-2x.png 2x
+                  "
+                  width="156"
+                  height="107" />
+                <img
+                  class="bonus-img"
+                  src="./src/img/bonuses/bonus-01-1x.png"
+                  alt="bonus"
+                  width="156"
+                  height="107"
+              /></picture>
+              <p class="item-text">
+                Чек лист «33 вопроса на собеседовании с визовым офицером»
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-01-1x.png 1x,
+                    ./src/img/bonuses/bonus-01-2x.png 2x
+                  "
+                  width="156"
+                  height="107" />
+                <img
+                  class="bonus-img"
+                  src="./src/img/bonuses/bonus-01-1x.png"
+                  alt="bonus"
+                  width="156"
+                  height="107"
+              /></picture>
+              <p class="item-text">
+                ТОП-10 основных ошибок при переезде в Америку
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="for-whom">
+        <div class="container">
+          <h2 class="title">Этот курс для:</h2>
+          <ul class="list">
+            <li class="list-item">
+              <span class="item-number">01</span>
+              <p class="item-text">
+                Тех, кто задается вопросами как переехать? С чего начать? Как
+                открыть визу?
+              </p>
+            </li>
+            <li class="list-item">
+              <span class="item-number">02</span>
+              <p class="item-text">
+                Кто мечтает побывать в США, и постоянно записывает это в свои
+                новогодние цели
+              </p>
+            </li>
+            <li class="list-item">
+              <span class="item-number">03</span>
+              <p class="item-text">
+                Амбициозным людям, которые хотят жить и работать в США
+              </p>
+            </li>
+            <li class="list-item">
+              <span class="item-number">04</span>
+              <p class="item-text">
+                Родителям, которые хотят дать лучшее будущее своим детям
+              </p>
+            </li>
+            <li class="list-item">
+              <span class="item-number">05</span>
+              <p class="item-text">
+                Студентам и специалистам которые хотят жить в америке и получить
+                лучшее возможности для развития
+              </p>
+            </li>
+            <li class="list-item">
+              <span class="item-number">06</span>
+              <p class="item-text">
+                Предпринимателям, стартаперам и инвесторам, которые хотят
+                развиваться и делать бизнес в самой большой и сильной экономике
+                мира
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="for-suitable">
+        <div class="container">
+          <h2 class="title">КОМУ ПОДОЙДЕТ <span>КУРС?</span></h2>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/suitable/suitable-01-1x.png 1x,
+                    ./src/img/suitable/suitable-01-2x.png 2x
+                  "
+                  width="48"
+                  height="53" />
+                <img
+                  class="suitable-img"
+                  src="./src/img/suitable/suitable-01-1x.png"
+                  alt="bonus"
+                  width="48"
+                  height="53"
+              /></picture>
+              <p class="item-title">
+                СОМНЕВАЕТЕСЬ, <span>ЧТО ЭТО ДЛЯ ВАС</span>
+              </p>
+              <ul class="text-list">
+                <li class="item-text">
+                  Задумывались о переезде, но пока не нашли легальный и
+                  комфортный вариант для себя
+                </li>
+                <li class="item-text">
+                  Не представляете, как сможете подтвердить образование и найти
+                  работу
+                </li>
+                <li class="item-text">
+                  Беспокоитесь за детей – их адаптацию, образование в новой
+                  среде
+                </li>
+                <li class="item-text">
+                  Предполагаете, что это слишком дорого, особенно медицина
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/suitable/suitable-02-1x.png 1x,
+                    ./src/img/suitable/suitable-02-2x.png 2x
+                  "
+                  width="48"
+                  height="53" />
+                <img
+                  class="suitable-img"
+                  src="./src/img/suitable/suitable-02-1x.png"
+                  alt="bonus"
+                  width="48"
+                  height="53"
+              /></picture>
+              <p class="item-title">ХОТИТЕ, НО <span>НЕ ЗНАЕТЕ КАК</span></p>
+              <ul class="text-list">
+                <li class="item-text">
+                  Вам необходим четкий пошаговый план и понимание бюджета
+                </li>
+                <li class="item-text">
+                  Вы готовы действовать, узнав успешные стратегии и поняв,
+                  сколько нужно денег на переезд и на ежемесячную жизнь
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/suitable/suitable-03-1x.png 1x,
+                    ./src/img/suitable/suitable-03-2x.png 2x
+                  "
+                  width="48"
+                  height="53" />
+                <img
+                  class="suitable-img"
+                  src="./src/img/suitable/suitable-03-1x.png"
+                  alt="bonus"
+                  width="48"
+                  height="53"
+              /></picture>
+              <p class="item-title">ПЛАНИРУЕТЕ <span>ЭМИГРИРОВАТЬ</span></p>
+              <ul class="text-list">
+                <li class="item-text">
+                  Устали собирать и перепроверять информацию из разрозненных
+                  источников
+                </li>
+                <li class="item-text">
+                  Цените свое время и деньги. Не хотели бы потерять тысячи
+                  долларов, доверившись мошенникам
+                </li>
+                <li class="item-text">
+                  Желаете получить всё и сразу: комплексную, достоверную и
+                  актуальную информацию из первых рук
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/suitable/suitable-04-1x.png 1x,
+                    ./src/img/suitable/suitable-04-2x.png 2x
+                  "
+                  width="48"
+                  height="53" />
+                <img
+                  class="suitable-img"
+                  src="./src/img/suitable/suitable-04-1x.png"
+                  alt="bonus"
+                  width="48"
+                  height="53"
+              /></picture>
+              <p class="item-title">ДУМАЛИ, НО <span>ОТЛОЖИЛИ</span></p>
+              <ul class="text-list">
+                <li class="item-text">
+                  Вас пугает геополитическая обстановка и Вы не понимаете, как
+                  совершить переезд в условиях мирового локдауна
+                </li>
+                <li class="item-text">
+                  Ждете более подходящего момента для себя. Возможно, выигрыша в
+                  лотерее Green Card
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/suitable/suitable-05-1x.png 1x,
+                    ./src/img/suitable/suitable-05-2x.png 2x
+                  "
+                  width="48"
+                  height="53" />
+                <img
+                  class="suitable-img"
+                  src="./src/img/suitable/suitable-05-1x.png"
+                  alt="bonus"
+                  width="48"
+                  height="53"
+              /></picture>
+              <p class="item-title">США ЭТО <span>ВАША МЕЧТА</span></p>
+              <ul class="text-list">
+                <li class="item-text">Вы хотите улучшить качество жизни</li>
+                <li class="item-text">
+                  Расширить свои возможности и свободы не на словах, а на деле.
+                  Жить у океана и наслаждаться теплым климатом
+                </li>
+                <li class="item-text">
+                  Зарабатывать достойные деньги и активно путешествовать по
+                  всему миру
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about-author">
+        <div class="container">
+          <h2 class="title">Про автора</h2>
+          <div class="author-image-container">
+            <h3 class="name">Михаил Богацкий</h3>
+            <p class="desc">
+              Исполнил свою мечту: живу, работаю и развиваю успешный бизнес в
+              США
+            </p>
+          </div>
+          <ul class="author-list">
+            <li class="list-item">
+              Получил работу в офисе Американской компании с минимальным
+              английским
+            </li>
+            <li class="list-item">
+              Запустил успешный автомобильный бизнес, предоставляющий услуги по
+              всей территории США, включая Гавайи и Аляску
+            </li>
+            <li class="list-item">
+              Основал сервис по переезду и адаптации в США, помогая людям
+              изменить жизнь и реализовать свои мечты!
+            </li>
+          </ul>
+          <p class="price"><span>150$</span> 19$</p>
+          <a class="btn-link-container" href="" target="_blank" rel="nofollow">
+            <p class="btn-link">Хочу в США</p>
+            <div class="btn-star-container">
+              <picture
+                ><source
+                  srcset="./src/img/sale-1x.png 1x, ./src/img/sale-2x.png 2x"
+                  width="69"
+                  height="69" />
+                <img
+                  class="btn-star-image"
+                  src="./src/img/sale-1x.png"
+                  alt="star-sale"
+                  width="69"
+                  height="69"
+              /></picture>
+              <p class="btn-sale-text">
+                <span>-87%</span>
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="about-course">
+        <div class="container">
+          <h2 class="title">Про курс</h2>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/about-course/about-course-01-1x.png 1x,
+                    ./src/img/about-course/about-course-01-1x.png 2x
+                  "
+                  width="114"
+                  height="126" />
+                <img
+                  class="about-course-img"
+                  src="./src/img/about-course/about-course-01-1x.png"
+                  alt="about course image"
+                  width="137"
+                  height="126"
+              /></picture>
+              Курс состоит из 8 видеоуроков по 10-20 мин
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/about-course/about-course-02-1x.png 1x,
+                    ./src/img/about-course/about-course-02-1x.png 2x
+                  "
+                  width="119"
+                  height="126" />
+                <img
+                  class="about-course-img"
+                  src="./src/img/about-course/about-course-02-1x.png"
+                  alt="about course image"
+                  width="119"
+                  height="126"
+              /></picture>
+              Ценные ресурсы, материалы и чек листы которые дополнят обучение
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/about-course/about-course-03-1x.png 1x,
+                    ./src/img/about-course/about-course-03-1x.png 2x
+                  "
+                  width="114"
+                  height="114" />
+                <img
+                  class="about-course-img"
+                  src="./src/img/about-course/about-course-03-1x.png"
+                  alt="about course image"
+                  width="114"
+                  height="114"
+              /></picture>
+              Сообщество для общения с людьми, которые находятся на этапе
+              переезда или адаптации
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="program">
+        <div class="container">
+          <h2 class="title">Программа <span>курса</span></h2>
+          <div class="program-container">
+            <ul class="program-list list">
+              <li class="program-item">
+                <div class="program-title-container">
+                  <p class="program-item-title">0. Интро</p>
+                  <div class="program-item-svg"></div>
+                </div>
+                <div class="program-answer-container">
+                  <div class="program-wrapper">
+                    <ul class="answer-list">
+                      <li class="answer-item">
+                        <span class="item-dot">/</span>
+                        <p class="program-answer">Знакомство с Михаилом</p>
+                      </li>
+                      <li class="answer-item">
+                        <span class="item-dot">/</span>
+                        <p class="program-answer">Как проходит обучение</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="program-item">
+                <div class="program-title-container">
+                  <p class="program-item-title">1. Как мне попасть в США?</p>
+                  <div class="program-item-svg"></div>
+                </div>
+                <div class="program-answer-container">
+                  <div class="program-wrapper">
+                    <ul class="answer-list">
+                      <li class="answer-item">
+                        <span class="item-dot">/</span>
+                        <p class="program-answer">
+                          Самые популярные способы переезда
+                        </p>
+                      </li>
+                      <li class="answer-item">
+                        <span class="item-dot">/</span>
+                        <p class="program-answer">
+                          Что точно не нужно делать, чтобы попасть в Америку
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="program-item">
+                <div class="program-title-container">
+                  <p class="program-item-title">2. Мой план переезда в США</p>
+                  <div class="program-item-svg"></div>
+                </div>
+                <div class="program-answer-container">
+                  <div class="program-wrapper">
+                    <ul class="answer-list">
+                      <li class="answer-item">
+                        <span class="item-dot">/</span>
+                        <p class="program-answer">
+                          Нужно ли вообще мне переезжать. Постановка цели на
+                          переезд и реальная оценка своих возможностей.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="program-item">
+                <div class="program-title-container">
+                  <p class="program-item-title">
+                    3. Куда ехать? Выбор города/штата и подготовка к переезду
+                  </p>
+                  <div class="program-item-svg"></div>
+                </div>
+                <div class="program-answer-container">
+                  <div class="program-wrapper">
+                    <ul class="answer-list">
+                      <li class="answer-item">
+                        <span class="item-dot">/</span>
+                        <p class="program-answer">
+                          Сравнение крупных и мелких городов для иммигранта:
+                          плюсы и минусы, цены, работа, жилье
+                        </p>
+                      </li>
+                      <li class="answer-item">
+                        <span class="item-dot">/</span>
+                        <p class="program-answer">
+                          Рассчитываем бюджет: сколько денег взять с собой
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="program-item">
+                <div class="program-title-container">
+                  <p class="program-item-title">4. Поиск жилья</p>
+                  <div class="program-item-svg"></div>
+                </div>
+                <div class="program-answer-container">
+                  <div class="program-wrapper">
+                    <ul class="answer-list">
+                      <li class="answer-item">
+                        <span class="item-dot">/</span>
+                        <p class="program-answer">
+                          Способы поиска жилья самостоятельно
+                        </p>
+                      </li>
+                      <li class="answer-item">
+                        <span class="item-dot">/</span>
+                        <p class="program-answer">
+                          Как не попасться на мошенников при покупке/аренде
+                          недвижимости
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="program-item">
+                <div class="program-title-container">
+                  <p class="program-item-title">
+                    5. Работа в США, где искать, сколько можно зарабатывать
+                  </p>
+                  <div class="program-item-svg"></div>
+                </div>
+                <div class="program-answer-container">
+                  <div class="program-wrapper">
+                    <ul class="answer-list">
+                      <li class="answer-item">
+                        <span class="item-dot">/</span>
+                        <p class="program-answer">
+                          Работа здесь и сейчас, если сразу нужен кэш по приезду
+                        </p>
+                      </li>
+                      <li class="answer-item">
+                        <span class="item-dot">/</span>
+                        <p class="program-answer">
+                          Способы заработка для мужчин и женщин
+                        </p>
+                      </li>
+                      <li class="answer-item">
+                        <span class="item-dot">/</span>
+                        <p class="program-answer">Как и где искать работу</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="program-item">
+                <div class="program-title-container">
+                  <p class="program-item-title">
+                    6. Обустройство жизни по приезду в Америку
+                  </p>
+                  <div class="program-item-svg"></div>
+                </div>
+                <div class="program-answer-container">
+                  <div class="program-wrapper">
+                    <ul class="answer-list">
+                      <li class="answer-item">
+                        <span class="item-dot">/</span>
+                        <p class="program-answer">
+                          Документы, счетов в банке транспорт
+                        </p>
+                      </li>
+                      <li class="answer-item">
+                        <span class="item-dot">/</span>
+                        <p class="program-answer">
+                          Дети в школу, садик, колледж
+                        </p>
+                      </li>
+                      <li class="answer-item">
+                        <span class="item-dot">/</span>
+                        <p class="program-answer">Страховки и медицина</p>
+                      </li>
+                      <li class="answer-item">
+                        <span class="item-dot">/</span>
+                        <p class="program-answer">Роды в Америке</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="program-item">
+                <div class="program-title-container">
+                  <p class="program-item-title">
+                    7. Американизация. Как почувствовать себя своим
+                  </p>
+                  <div class="program-item-svg"></div>
+                </div>
+                <div class="program-answer-container">
+                  <div class="program-wrapper">
+                    <ul class="answer-list">
+                      <li class="answer-item">
+                        <span class="item-dot">/</span>
+                        <p class="program-answer">
+                          Самые популярные способы переезда
+                        </p>
+                      </li>
+                      <li class="answer-item">
+                        <span class="item-dot">/</span>
+                        <p class="program-answer">
+                          Что точно не нужно делать, чтобы попасть в Америку
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="have-time-bonus">
+        <div class="container">
+          <h3 class="subtitle">
+            Успейте присоединиться
+            <span>по специальной цене и забрать бонусы</span>
+          </h3>
+          <p class="price"><span>150$</span> 19$</p>
+          <a class="btn-link-container" href="" target="_blank" rel="nofollow">
+            <p class="btn-link">Хочу в США</p>
+            <div class="btn-star-container">
+              <picture
+                ><source
+                  srcset="./src/img/sale-1x.png 1x, ./src/img/sale-2x.png 2x"
+                  width="69"
+                  height="69" />
+                <img
+                  class="btn-star-image"
+                  src="./src/img/sale-1x.png"
+                  alt="star-sale"
+                  width="69"
+                  height="69"
+              /></picture>
+              <p class="btn-sale-text">
+                <span>-87%</span>
+              </p>
+            </div>
+          </a>
+          <ul class="bonuses-list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-01-1x.png 1x,
+                    ./src/img/bonuses/bonus-01-2x.png 2x
+                  "
+                  width="156"
+                  height="107" />
+                <img
+                  class="bonus-img"
+                  src="./src/img/bonuses/bonus-01-1x.png"
+                  alt="bonus"
+                  width="156"
+                  height="107"
+              /></picture>
+              <p class="item-text">
+                Персональная стратегия переезда от наших экспертов
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-01-1x.png 1x,
+                    ./src/img/bonuses/bonus-01-2x.png 2x
+                  "
+                  width="156"
+                  height="107" />
+                <img
+                  class="bonus-img"
+                  src="./src/img/bonuses/bonus-01-1x.png"
+                  alt="bonus"
+                  width="156"
+                  height="107"
+              /></picture>
+              <p class="item-text">
+                Список документов для подачи на туристическую визу
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-01-1x.png 1x,
+                    ./src/img/bonuses/bonus-01-2x.png 2x
+                  "
+                  width="156"
+                  height="107" />
+                <img
+                  class="bonus-img"
+                  src="./src/img/bonuses/bonus-01-1x.png"
+                  alt="bonus"
+                  width="156"
+                  height="107"
+              /></picture>
+              <p class="item-text">
+                Чек лист «33 вопроса на собеседовании с визовым офицером»
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-01-1x.png 1x,
+                    ./src/img/bonuses/bonus-01-2x.png 2x
+                  "
+                  width="156"
+                  height="107" />
+                <img
+                  class="bonus-img"
+                  src="./src/img/bonuses/bonus-01-1x.png"
+                  alt="bonus"
+                  width="156"
+                  height="107"
+              /></picture>
+              <p class="item-text">
+                ТОП-10 основных ошибок при переезде в Америку
+              </p>
+            </li>
+          </ul>
+          <div class="timer-container">
+            <div class="countdown">
+              <div class="countdown-number">
+                <span class="minutes countdown-time"></span>
+                <div class="countdown-label minutes-label"></div>
+              </div>
+              <div><span class="countdown-doubledot">:</span></div>
+              <div class="countdown-number">
+                <span class="seconds countdown-time"></span>
+                <div class="countdown-label seconds-label"></div>
+              </div>
+              <div><span class="countdown-doubledot">:</span></div>
+              <div class="countdown-number">
+                <span class="milliseconds countdown-time"></span>
+                <div class="countdown-label milliseconds-label">мілісекунд</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="garant">
+        <div class="container">
+          <img
+            class="garant-image"
+            src="./src/img/garant.svg"
+            alt="attention"
+            width="84"
+            height="99"
+          />
+          <div class="garant-text-container">
+            <h2 class="title">Гарантия</h2>
+            <p class="garant-text accent">
+              Если вы пройдете мой курс и у вас останутся сомнения в его пользе
+              для вас – я верну вам полную стоимость обучения
+            </p>
+            <p class="garant-text">
+              Для этого просто напишите в службу поддержки и они сделают возврат
+              без лишних вопросов
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="how-study">
+        <div class="container">
+          <h2 class="title">Как происходит <span>обучение</span></h2>
+          <div class="list-container">
+            <img
+              class="study-arrow first-arrow"
+              src="./src/img/arrow.svg"
+              alt="arrow"
+            />
+            <img
+              class="study-arrow second-arrow"
+              src="./src/img/arrow.svg"
+              alt="arrow"
+            />
+            <ul class="list">
+              <li class="list-item">
+                <span class="item-number">1</span>
+                <p class="item-text">
+                  После оплаты получите мгновенный доступ к Телеграмм-боту, где
+                  уже сразу вам будут доступны все уроки
+                </p>
+              </li>
+              <li class="list-item">
+                <span class="item-number">2</span>
+                <p class="item-text">
+                  Уроки в записи, продолжительностью 10-20 мин. Учитесь прямо с
+                  телефона в удобное для вас время
+                </p>
+              </li>
+              <li class="list-item">
+                <span class="item-number">3</span>
+                <p class="item-text">
+                  Доступ к урокам и практическим материалам – действует 90 дней,
+                  что позволит проходить курс в комфортном для себя режиме
+                </p>
+              </li>
+            </ul>
+          </div>
+          <picture
+            ><source
+              srcset="
+                ./src/img/how-study/liberty-1x.png 1x,
+                ./src/img/how-study/liberty-1x.png 2x
+              "
+              width="154"
+              height="332" />
+            <img
+              class="liberty-img"
+              src="./src/img/how-study/liberty-1x.png"
+              alt="statue of libertye"
+              width="154"
+              height="332"
+          /></picture>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <div class="title-container">
+            <h2 class="title">отзывы</h2>
+            <div class="move-container">
+              <img src="./src/img/move-hand.svg" alt="move hand" width="21" />
+              <p class="move-text">листай, чтоб увидеть больше</p>
+            </div>
+          </div>
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-img-01-1x.png 1x,
+                      ./src/img/reviews/review-img-01-2x.png 2x
+                    "
+                    width="281"
+                    height="auto" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-img-01-1x.png"
+                    alt="review"
+                    width="281"
+                    height="auto"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-img-02-1x.png 1x,
+                      ./src/img/reviews/review-img-02-2x.png 2x
+                    "
+                    width="281"
+                    height="auto" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-img-02-1x.png"
+                    alt="review"
+                    width="281"
+                    height="auto"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-img-03-1x.png 1x,
+                      ./src/img/reviews/review-img-03-2x.png 2x
+                    "
+                    width="281"
+                    height="auto" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-img-03-1x.png"
+                    alt="review"
+                    width="281"
+                    height="auto"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-img-04-1x.png 1x,
+                      ./src/img/reviews/review-img-04-2x.png 2x
+                    "
+                    width="281"
+                    height="auto" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-img-04-1x.png"
+                    alt="review"
+                    width="281"
+                    height="auto"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-img-05-1x.png 1x,
+                      ./src/img/reviews/review-img-05-2x.png 2x
+                    "
+                    width="281"
+                    height="auto" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-img-05-1x.png"
+                    alt="review"
+                    width="281"
+                    height="auto"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-img-06-1x.png 1x,
+                      ./src/img/reviews/review-img-06-2x.png 2x
+                    "
+                    width="281"
+                    height="auto" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-img-06-1x.png"
+                    alt="review"
+                    width="281"
+                    height="auto"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-img-07-1x.png 1x,
+                      ./src/img/reviews/review-img-07-2x.png 2x
+                    "
+                    width="281"
+                    height="auto" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-img-07-1x.png"
+                    alt="review"
+                    width="281"
+                    height="auto"
+                /></picture>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="container">
+          <h2 class="title">Ответы на <span>вопросы</span></h2>
+
+          <div class="questions-container">
+            <ul class="questions-list list">
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">
+                    А если я не планирую в США в ближайшее время?
+                  </p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      Для этого мы и создали обучение, в котором вы сможете
+                      ознакомится с информацией об Америке и заранее принять
+                      правильные решения
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">
+                    Как быстро можно попасть в Америку?
+                  </p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      Это зависит от типа визы. Процесс может занять от
+                      нескольких недель до нескольких месяцев и даже лет. В
+                      курсе мы разбираем более детально.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">
+                    Что делать, если у меня низкий уровень английского?
+                  </p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      В США нет официального-национального английского языка.
+                      Это многонациональная и многокультурная страна, где Вам
+                      предоставляют переводчика почти везде, где это может
+                      понадобится.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">
+                    Смогу ли я найти работу без знания английского?
+                  </p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      Да, мы расскажем, какие работы доступны, для новоприбывших
+                      даже без знания английского. Также дадим список популярных
+                      языковых школ.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">
+                    Как выбрать город для переезда?
+                  </p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      Мы разбираем это вопрос в одном из наших уроков.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">
+                    Что делать, если я не знаю, с чего начать?
+                  </p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      Просто начните с обучения. Вы получите четкий пошаговый
+                      план, который поможет Вам начать.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">
+                    Если у меня пока нет денег на переезд, стоит ли идти на
+                    курс?
+                  </p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      На курсе вы сможете понять, что нужно на каждом этапе,
+                      рассчитайте бюджет на переезд и сформируете пошаговый план
+                      который поможет сэкономить финансы в будущем.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer"><div class="container"></div></footer>
+    <footer class="footer">
+      <div class="container">
+        <a class="mail-container" href="" rel="nofollow" target="_blank"
+          ><img
+            src="./src/img/footer-mail.svg"
+            width="24"
+            height="18"
+            alt="mail"
+          />Служба поддержки</a
+        >
+        <a
+          class="dising-creator"
+          href="https://www.instagram.com/lllcku"
+          target="_blank"
+          rel="nofollow"
+          ><img src="./src/img/insta.svg" alt="insta" height="25" width="25" />
+          <p>
+            розробка сайту <br />
+            <span>lisa bardadym</span>
+          </p></a
+        >
+      </div>
+    </footer>
+    <script src="./src/js/changeDate.js" type="module"></script>
+    <script src="./src/js/timer.js" type="module"></script>
+    <script src="./src/js/program.js" type="module"></script>
+    <script src="./src/js/swiper.js" type="module"></script>
+    <script src="./src/js/questions.js" type="module"></script>
   </body>
 </html>
