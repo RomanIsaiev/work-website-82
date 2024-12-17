@@ -34,14 +34,10 @@ function initializeClock(clock, endtime) {
       minutesSpan.innerHTML = '00';
       secondsSpan.innerHTML = '00';
       millisecondsSpan.innerHTML = '00';
-      minutesLabel.innerHTML = declensionNum(0, [
-        'хвилина',
-        'хвилини',
-        'хвилин',
-      ]);
+      minutesLabel.innerHTML = declensionNum(0, ['минута', 'минуты', 'минут']);
       secondsLabel.innerHTML = declensionNum(0, [
         'секунда',
-        'секунди',
+        'секунды',
         'секунд',
       ]);
       clearInterval(timeinterval); // Останавливаем таймер
@@ -53,13 +49,13 @@ function initializeClock(clock, endtime) {
     millisecondsSpan.innerHTML = ('00' + t.milliseconds).slice(-2);
 
     minutesLabel.innerHTML = declensionNum(t.minutes, [
-      'хвилина',
-      'хвилини',
-      'хвилин',
+      'минута',
+      'минуты',
+      'минут',
     ]);
     secondsLabel.innerHTML = declensionNum(t.seconds, [
       'секунда',
-      'секунди',
+      'секунды',
       'секунд',
     ]);
   }
