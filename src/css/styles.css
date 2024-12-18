@@ -162,14 +162,15 @@ body {
 }
 
 .hero .list-item {
-  /* max-width: 191px; */
+  width: 100%;
+  max-width: 49%;
   border-radius: 10px;
   background: #eeefff;
 
   padding: 12px;
 }
 
-.item-box {
+.hero .item-box {
   display: flex;
   align-items: center;
   justify-content: center;
