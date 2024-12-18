@@ -43,7 +43,7 @@ body {
   margin: 0 auto;
   width: 100%;
   padding: 0 20px;
-  max-width: 360px;
+  max-width: 430px;
 }
 
 /* header */
@@ -162,15 +162,18 @@ body {
 }
 
 .hero .list-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
-  max-width: 158px;
+  /* max-width: 191px; */
   border-radius: 10px;
   background: #eeefff;
 
   padding: 12px;
+}
+
+.item-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .hero .item-text {
@@ -181,6 +184,8 @@ body {
   font-weight: 500;
   line-height: 110%; /* 13.2px */
   letter-spacing: -0.24px;
+
+  max-width: 105px;
 }
 
 .btn {
@@ -288,6 +293,7 @@ body {
 .bonuses-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
   column-gap: 8px;
   row-gap: 36px;
@@ -320,6 +326,7 @@ body {
 /* for-whom */
 
 .for-whom {
+  padding-top: 40px;
   padding-bottom: 100px;
 }
 
@@ -373,8 +380,6 @@ body {
   font-weight: 500;
   line-height: 110%; /* 16.5px */
   letter-spacing: -0.15px;
-
-  max-width: 228px;
 }
 
 /* for-suitable */
@@ -396,7 +401,8 @@ body {
   line-height: 110%; /* 35.2px */
   text-transform: uppercase;
 
-  margin-bottom: 40px;
+  max-width: 320px;
+  margin: 0 auto 40px auto;
 }
 
 .for-suitable .title span {
@@ -433,6 +439,7 @@ body {
   line-height: 120%; /* 24px */
   text-transform: uppercase;
 
+  max-width: 264px;
   margin-bottom: 12px;
 }
 
@@ -459,6 +466,8 @@ body {
 /* about-author */
 
 .about-author {
+  overflow: hidden;
+
   padding-bottom: 60px;
 }
 
@@ -484,15 +493,17 @@ body {
   justify-content: end;
 
   width: 100%;
-  max-width: 320px;
+  max-width: 100%;
   min-height: 240px;
   height: auto;
   padding: 15px;
 
+  border-radius: 30px;
+
   background-image: url(../img/about-author/author-1x.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
 
   margin-bottom: 8px;
 }
@@ -513,6 +524,8 @@ body {
   font-weight: 400;
   line-height: 110%; /* 24.2px */
   text-transform: uppercase;
+
+  max-width: 185px;
 
   margin-bottom: 9px;
 }
@@ -667,6 +680,10 @@ body {
 .about-course .list-item {
   position: relative;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: #090909;
   font-family: Montserrat;
   font-size: 15px;
@@ -674,6 +691,8 @@ body {
   font-weight: 500;
   line-height: 110%; /* 16.5px */
   letter-spacing: -0.45px;
+
+  height: 132px;
 
   padding: 28px 16px 28px 124px;
   border-radius: 10px;
@@ -722,7 +741,8 @@ body {
   line-height: 120%; /* 33.6px */
   text-transform: uppercase;
 
-  margin-bottom: 20px;
+  max-width: 320px;
+  margin: 0 auto 20px auto;
 }
 
 .program .title span {
@@ -735,7 +755,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 345px;
+  max-width: 430px;
 }
 
 .program-item-svg {
@@ -855,6 +875,17 @@ body {
   margin-bottom: 30px;
 }
 
+.price-sale {
+  color: #1c2dcf;
+  text-align: center;
+  font-family: Benzin-Semibold;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 18.75px */
+  text-transform: uppercase;
+}
+
 .have-time-bonus .subtitle span {
   color: #090909;
 }
@@ -879,7 +910,7 @@ body {
 .form-container .btn-star-container {
   top: unset;
   right: -10px;
-  bottom: 14px;
+  top: -16px;
 }
 
 /* garant */
@@ -1017,12 +1048,12 @@ body {
 }
 
 .how-study .first-arrow {
-  left: 90px;
+  left: 120px;
   top: 114px;
 }
 
 .how-study .second-arrow {
-  right: 90px;
+  right: 120px;
   top: 280px;
 
   transform: rotateY(180deg);
@@ -1137,7 +1168,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 345px;
+  max-width: 430px;
 }
 
 .questions-item-svg {
@@ -1269,4 +1300,38 @@ body {
   line-height: 115%;
   letter-spacing: -0.39px;
   text-transform: uppercase;
+}
+
+/* js show btn */
+
+.archor-btn {
+  padding: 36px;
+  background: #e00004;
+
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 15.4px */
+  letter-spacing: -0.14px;
+  text-transform: uppercase;
+}
+
+.archor-btn.scroll-container {
+  display: none;
+}
+
+/* */
+.archor-btn.scroll-container.js-show {
+  display: block;
+
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  z-index: 999;
+
+  width: 100%;
+  transform: translate(-50%);
 }

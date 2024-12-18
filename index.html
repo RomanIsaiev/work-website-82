@@ -78,40 +78,48 @@
           </div>
           <ul class="list">
             <li class="list-item">
-              <img
-                src="./src/img/hero/item-image.svg"
-                alt="star"
-                width="20"
-                height="20"
-              />
-              <p class="item-text">Даже без знания английского</p>
+              <div class="item-box">
+                <img
+                  src="./src/img/hero/item-image.svg"
+                  alt="star"
+                  width="20"
+                  height="20"
+                />
+                <p class="item-text">Даже без знания английского</p>
+              </div>
             </li>
             <li class="list-item">
-              <img
-                src="./src/img/hero/item-image.svg"
-                alt="star"
-                width="20"
-                height="20"
-              />
-              <p class="item-text">С правильной стратегией</p>
+              <div class="item-box">
+                <img
+                  src="./src/img/hero/item-image.svg"
+                  alt="star"
+                  width="20"
+                  height="20"
+                />
+                <p class="item-text">С правильной стратегией</p>
+              </div>
             </li>
             <li class="list-item">
-              <img
-                src="./src/img/hero/item-image.svg"
-                alt="star"
-                width="20"
-                height="20"
-              />
-              <p class="item-text">Максимальной поддержкой</p>
+              <div class="item-box">
+                <img
+                  src="./src/img/hero/item-image.svg"
+                  alt="star"
+                  width="20"
+                  height="20"
+                />
+                <p class="item-text">Максимальной поддержкой</p>
+              </div>
             </li>
             <li class="list-item">
-              <img
-                src="./src/img/hero/item-image.svg"
-                alt="star"
-                width="20"
-                height="20"
-              />
-              <p class="item-text">И экономией бюджета</p>
+              <div class="item-box">
+                <img
+                  src="./src/img/hero/item-image.svg"
+                  alt="star"
+                  width="20"
+                  height="20"
+                />
+                <p class="item-text">И экономией бюджета</p>
+              </div>
             </li>
           </ul>
           <a class="btn" href="#buy">Присоединиться</a>
@@ -435,7 +443,10 @@
                   width="48"
                   height="53"
               /></picture>
-              <p class="item-title">США ЭТО <span>ВАША МЕЧТА</span></p>
+              <p class="item-title">
+                США ЭТО <br />
+                <span>ВАША МЕЧТА</span>
+              </p>
               <ul class="text-list">
                 <li class="item-text">Вы хотите улучшить качество жизни</li>
                 <li class="item-text">
@@ -567,7 +578,7 @@
             <ul class="program-list list">
               <li class="program-item">
                 <div class="program-title-container">
-                  <p class="program-item-title">0. Интро</p>
+                  <p class="program-item-title">Интро</p>
                   <div class="program-item-svg"></div>
                 </div>
                 <div class="program-answer-container">
@@ -575,11 +586,17 @@
                     <ul class="answer-list">
                       <li class="answer-item">
                         <span class="item-dot">/</span>
-                        <p class="program-answer">Знакомство с Михаилом</p>
+                        <p class="program-answer">Знакомство</p>
                       </li>
                       <li class="answer-item">
                         <span class="item-dot">/</span>
                         <p class="program-answer">Как проходит обучение</p>
+                      </li>
+                      <li class="answer-item">
+                        <span class="item-dot">/</span>
+                        <p class="program-answer">
+                          The Reasons Why (Причины почему)
+                        </p>
                       </li>
                     </ul>
                   </div>
@@ -620,8 +637,14 @@
                       <li class="answer-item">
                         <span class="item-dot">/</span>
                         <p class="program-answer">
-                          Нужно ли вообще мне переезжать. Постановка цели на
-                          переезд и реальная оценка своих возможностей.
+                          Нужно ли вообще мне переезжать
+                        </p>
+                      </li>
+                      <li class="answer-item">
+                        <span class="item-dot">/</span>
+                        <p class="program-answer">
+                          Постановка цели на переезд и реальная оценка своих
+                          возможностей
                         </p>
                       </li>
                     </ul>
@@ -693,7 +716,8 @@
                       <li class="answer-item">
                         <span class="item-dot">/</span>
                         <p class="program-answer">
-                          Работа здесь и сейчас, если сразу нужен кэш по приезду
+                          Работа здесь и сейчас, если сразу нужны деньги по
+                          приезду
                         </p>
                       </li>
                       <li class="answer-item">
@@ -723,7 +747,7 @@
                       <li class="answer-item">
                         <span class="item-dot">/</span>
                         <p class="program-answer">
-                          Документы, счетов в банке транспорт
+                          Документы, счета в банке, транспорт
                         </p>
                       </li>
                       <li class="answer-item">
@@ -735,10 +759,6 @@
                       <li class="answer-item">
                         <span class="item-dot">/</span>
                         <p class="program-answer">Страховки и медицина</p>
-                      </li>
-                      <li class="answer-item">
-                        <span class="item-dot">/</span>
-                        <p class="program-answer">Роды в Америке</p>
                       </li>
                     </ul>
                   </div>
@@ -781,8 +801,9 @@
             <span>по специальной цене и забрать бонусы</span>
           </h3>
           <p class="price"><span>150$</span> 19$</p>
+          <p class="price-sale">скидка -87%</p>
           <div class="form-container">
-            <div class="btn-star-container">
+            <!-- <div class="btn-star-container">
               <picture
                 ><source
                   srcset="./src/img/sale-1x.png 1x, ./src/img/sale-2x.png 2x"
@@ -798,7 +819,7 @@
               <p class="btn-sale-text">
                 <span>-87%</span>
               </p>
-            </div>
+            </div> -->
             <div id="kwiga-widget-1734359708000"></div>
           </div>
 
@@ -1272,11 +1293,15 @@
         >
       </div>
     </footer>
+    <a class="archor-btn scroll-container" href="#buy"
+      >Присоединиться со скидкой -87%</a
+    >
     <script src="./src/js/changeDate.js" type="module"></script>
     <script src="./src/js/timer.js" type="module"></script>
     <script src="./src/js/program.js" type="module"></script>
     <script src="./src/js/swiper.js" type="module"></script>
     <script src="./src/js/questions.js" type="module"></script>
+    <script src="./src/js/hero-btn.js" type="module"></script>
     <script
       type="module"
       src="https://kwiga.com/build/js/kwiga-widget.js?t=1734359708000&uuid=9a22882a-4280-46fb-92a3-54f8a9f3f9a2&producer=https://kwiga.com/"
