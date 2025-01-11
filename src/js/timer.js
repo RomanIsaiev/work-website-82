@@ -61,7 +61,7 @@ function initializeClock(clock, endtime) {
   }
 
   updateClock();
-  var timeinterval = setInterval(updateClock, 50); // Обновление каждые 50 мс
+  var timeinterval = setInterval(updateClock, 10); // Обновление каждые 50 мс
 }
 
 function startAllTimers() {
