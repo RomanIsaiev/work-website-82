@@ -15,8 +15,44 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/css/styles.css" />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      );
+      fbq('init', '1152684939811206');
+      fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
   </head>
   <body>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1152684939811206&ev=PageView&noscript=1"
+    /></noscript>
     <header class="header">
       <div class="container">
         <div class="short-info-container">
@@ -167,6 +203,7 @@
               </div>
             </div>
           </div>
+
           <ul class="bonuses-list">
             <li class="list-item">
               <picture
@@ -565,8 +602,7 @@
                   width="114"
                   height="114"
               /></picture>
-              Сообщество для общения с людьми, которые находятся на этапе
-              переезда или адаптации
+              Персональная стратегия по переезду и адаптации в США
             </li>
           </ul>
         </div>
@@ -776,14 +812,12 @@
                     <ul class="answer-list">
                       <li class="answer-item">
                         <span class="item-dot">/</span>
-                        <p class="program-answer">
-                          Самые популярные способы переезда
-                        </p>
+                        <p class="program-answer">Трудности адаптации</p>
                       </li>
                       <li class="answer-item">
                         <span class="item-dot">/</span>
                         <p class="program-answer">
-                          Что точно не нужно делать, чтобы попасть в Америку
+                          Интеграция в Американское общество.
                         </p>
                       </li>
                     </ul>
@@ -1313,6 +1347,7 @@
         >
       </div>
     </footer>
+
     <a class="archor-btn scroll-container" href="#buy"
       >Присоединиться со скидкой -87%</a
     >
